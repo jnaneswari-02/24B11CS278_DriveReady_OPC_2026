@@ -1,1 +1,125 @@
+# AI Agents Workshop – Day 2
 
+## Overview
+
+This project is part of the AI Agents Workshop. Day 2 focuses on building a simple AI-powered customer support chatbot for **Sweet Crumbs Home Bakery** using Python and the Groq API.
+
+The practical covers prompt engineering, few-shot prompting, JSON extraction, chatbot memory, Python functions, decorators, and error handling.
+
+## Technologies Used
+
+- Python
+- Google Colab
+- Groq API
+- OpenAI Python SDK
+- JSON
+
+## Topics Covered
+
+### 1. Chat Message Roles
+Learned how to use the three main message roles:
+- `system` – Defines the chatbot's behavior and instructions.
+- `user` – Contains the customer's message.
+- `assistant` – Contains the chatbot's response.
+
+### 2. System Prompt
+Created a system prompt to define the bakery assistant's role, menu, business information, and response rules.
+
+### 3. Few-Shot Prompting
+Provided examples to help the AI classify customer messages into three categories:
+- Order
+- Question
+- Complaint
+
+### 4. JSON Extraction
+Used AI to extract structured order details from customer messages.
+
+Example fields:
+- Customer name
+- Cake item
+- Quantity
+- Order date
+- Eggless preference
+
+Used Python's `json` module to process the extracted information.
+
+### 5. Chatbot Memory
+Implemented conversation history using a Python list so the chatbot can remember recent messages and respond based on previous interactions.
+
+### 6. Python Concepts
+
+Practiced the following Python concepts:
+
+- Dictionaries
+- JSON serialization and parsing
+- Functions
+- Default arguments
+- Decorators
+- Exception handling
+
+### 7. Integrated Chatbot
+Combined prompts, API calls, conversation history, and Python functions to create an interactive bakery customer support chatbot.
+
+## Sample Bakery Menu
+
+| Item | Price |
+|---|---:|
+| Plum Cake | ₹500 |
+| Chocolate Cake | ₹650 |
+| Cupcake | ₹80 |
+
+## Business Rules
+
+- Orders require 24 hours' advance notice.
+- Eggless cakes are available.
+- The chatbot must not invent prices or business information.
+- The chatbot must not promise delivery times.
+- If information is unavailable, it should respond: "I'll check with the owner."
+
+*Note: These are sample details used for the workshop.*
+
+## Example Test Messages
+
+- Hi, my name is Ravi.
+- Do you have eggless cakes?
+- What is the price of plum cake?
+- I need 2 cupcakes.
+- My cake was damaged.
+- What is my name?
+- What did I order?
+
+## Learning Outcomes
+
+After completing Day 2, I learned how to:
+
+- Connect Python applications with the Groq API.
+- Create effective system prompts.
+- Use few-shot prompting for message classification.
+- Extract structured information using JSON.
+- Maintain chatbot conversation history.
+- Write reusable Python functions.
+- Use decorators and exception handling.
+- Build a basic interactive AI chatbot.
+
+## Security Notes
+
+- API keys are stored using Google Colab Secrets.
+- Never expose API keys in public repositories.
+- Do not hardcode API keys in notebook code.
+
+## Future Improvements
+
+- Add more bakery products.
+- Improve order detail validation.
+- Add more customer message examples.
+- Improve conversation memory.
+- Extend the chatbot with additional business features.
+
+## Conclusion
+
+Day 2 helped me understand how to build a basic AI-powered chatbot using prompt engineering, structured data extraction, conversation memory, and Python programming.
+
+**Environment:** Google Colab  
+**Language:** Python  
+**API:** Groq  
+**Project:** Sweet Crumbs Home Bakery Assistant
